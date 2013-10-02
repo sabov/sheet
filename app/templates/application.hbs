@@ -1,0 +1,30 @@
+<div>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand">
+                    Your App
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="container" id="main">
+        <div class="row">
+            <div>
+                <div class="col-md-3">
+                    <div class="well sidebar-nav">
+                        <span class="nav-header">Colors</span>
+                        <ul class="list-group">
+                        {{#each item in controller}}
+                            <li class="list-group-item">{{item}}</li>
+                        {{/each}}
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    {{outlet}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
