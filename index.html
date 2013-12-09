@@ -9,8 +9,219 @@
 
     <script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
     <script type="text/javascript" src="bower_components/less.js/dist/less-1.5.1.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <body>
-    <h1>Hello!</h1>
+    <div class="container">
+        <div class="head">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="brand">
+                        Щит <img src="img/logo.png" alt="" />
+                    </h1>
+                </div>
+                <div class="col-md-4">
+                    <div class="icons">
+                        <i class="icon icon-twitter"></i>
+                        <i class="icon icon-facebook"></i>
+                        <i class="icon icon-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-main">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="">Головна</a></li>
+                <li><a href="">Послуги</a></li>
+                <li><a href="">Про нас</a></li>
+                <li><a href="">Контакти</a></li>
+            </ul>
+        </nav>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+             <ol class="carousel-indicators carousel-indicators-plain">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/slide_1.jpg" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/slide_3.jpg" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/slide_2.jpg" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+        <div class="well well-dark systems">
+            <h4 class="page-title">Системи безпеки</h4>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="img/post-img7.jpg" alt="" />
+                    <p>Безпечне транспортування цiнних паперiв та грошей</p>
+                    <a href="">Дiзнайся бiльше...</a>
+                </div>
+                <div class="col-md-3">
+                    <img src="img/post-img6.jpg" alt="" />
+                    <p>Безпечне транспортування цiнних паперiв та грошей</p>
+                    <a href="">Дiзнайся бiльше...</a>
+                </div>
+                <div class="col-md-3">
+                    <img src="img/post-img5.jpg" alt="" />
+                    <p>Безпечне транспортування цiнних паперiв та грошей</p>
+                    <a href="">Дiзнайся бiльше...</a>
+                </div>
+                <div class="col-md-3">
+                    <img src="img/post-img4.jpg" alt="" />
+                    <p>Безпечне транспортування цiнних паперiв та грошей</p>
+                    <a href="">Дiзнайся бiльше...</a>
+                </div>
+            </div>
+        </div>
+        <div class="well well-light">
+            <div class="row">
+                <div class="col-md-8">
+                    <h4 class="page-title">
+                        Пакети послуг
+                    </h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="package">
+                                <img src="img/packages-img1.jpg" alt="" />
+                                <h5 class="package-title">
+                                    Приватна охорона
+                                </h5>
+                                <p class="c-gray">
+                                    Надання приватної охорони, супроводження
+                                    охоронцями
+                                </p>
+                            </div>
+                            <div class="package">
+                                <img src="img/packages-img2.jpg" alt="" />
+                                <h5 class="package-title">
+                                    Приватна охорона
+                                </h5>
+                                <p class="c-gray">
+                                    Надання приватної охорони, супроводження
+                                    охоронцями
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="package">
+                                <img src="img/packages-img3.jpg" alt="" />
+                                <h5 class="package-title">
+                                    Приватна охорона
+                                </h5>
+                                <p class="c-gray">
+                                    Надання приватної охорони, супроводження
+                                    охоронцями
+                                </p>
+                            </div>
+                            <div class="package">
+                                <img src="img/packages-img4.jpg" alt="" />
+                                <h5 class="package-title">
+                                    Приватна охорона
+                                </h5>
+                                <p class="c-gray">
+                                    Надання приватної охорони, супроводження
+                                    охоронцями
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="page-title">
+                        Події
+                    </h4>
+                    <div class="event">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="event-date">
+                                    <span>31 Груд</span>
+                                    <span>2013</span>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h4 class="event-title">
+                                    Новий рік!
+                                </h4>
+                                <p class="c-gray">
+                                    Цього чарівного дня не забудьте прийти на майдан і
+                                    плюнути на фотографію Януковича, кажуть це принесе
+                                    щастя в новому році. | 
+                                    <a href="">далі...</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="event-date">
+                                    <span>31 Груд</span>
+                                    <span>2013</span>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h4 class="event-title">
+                                    Новий рік!
+                                </h4>
+                                <p class="c-gray">
+                                    Цього чарівного дня не забудьте прийти на майдан і
+                                    плюнути на фотографію Януковича, кажуть це принесе
+                                    щастя в новому році. | 
+                                    <a href="">далі...</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="event-date">
+                                    <span>31 Груд</span>
+                                    <span>2013</span>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h4 class="event-title">
+                                    Новий рік!
+                                </h4>
+                                <p class="c-gray">
+                                    Цього чарівного дня не забудьте прийти на майдан і
+                                    плюнути на фотографію Януковича, кажуть це принесе
+                                    щастя в новому році. | 
+                                    <a href="">далі...</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="well well-dark foot">
+            Усі права захищенно © 2014
+        </div>
+    </div>
 </body>
 </html>
 

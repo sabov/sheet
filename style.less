@@ -1,3 +1,167 @@
-h1 {
-    color: red;
+body {
+    background: url('img/bg.gif') repeat;
+    color:  #FFFFFF;
+}
+h4 {
+}
+p {
+    font-size: 12px;
+}
+a {
+    color: #FFC000;
+    font-size: 12px;
+}
+
+.container {
+    width: 1050px;
+}
+.head {
+    background: #3E3D3B;
+    margin-top: 10px;
+    padding: 15px 40px;
+}
+.navbar-main {
+    background: #232221;
+    padding: 0 40px;
+    margin: 0;
+    li {
+        margin-right: 1px;
+        a {
+            text-transform: uppercase;
+            text-shadow: 1px 1px rgba(0,0,0,0.15);
+            color: #FFFFFF;
+            &:hover, &.active{
+                background: #FFC000;
+            }
+        }
+        &.active {
+            a {
+                background: #FFC000;
+            }
+        }
+    }
+}
+.carousel-indicators-plain {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none outside none;
+    width: 100%;
+    left: 0;
+    z-index: 16;
+    li {
+        border: none;
+        padding: 0;
+        margin: 0;
+        height: 4px;
+        background: #161515;
+        width: 33.3333%;
+        border-radius: 0;
+        float: left;
+        &.active {
+            width: 33.3333%;
+            height: 4px;
+            border: none;
+            background: #FFC000;
+        }
+    }
+}
+.well {
+    border-radius: 0;
+    border: 0;
+    margin: 0;
+    padding: 20px 40px;
+}
+.well-dark {
+    background: #232221;
+}
+.well-light {
+    background: #403F3D;
+}
+.package {
+    width: 280px;
+    float: left;
+    margin-right: 20px;
+}
+.package-title {
+    background: url('img/title.png');
+    display: block;
+    width: 280px;
+    height: 40;
+    text-transform: uppercase;
+    line-height: 40px;
+    font-size: 16px;
+    padding: 0 20px;
+    margin: 0 0 15px;
+}
+.c-gray {
+    color: #777676;
+}
+
+.event {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #52514F;
+    padding-bottom: 10px;
+}
+.event-date {
+    background: #232221;
+    border-radius: 5px;
+    padding: 10px;
+    span {
+        display: block;
+        text-align: center;
+    }
+}
+.event-title {
+    margin: 0 0 10px;
+}
+.page-title {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.systems {
+    img {
+        margin-bottom: 10px;
+    }
+    p {
+        margin: 0;
+    }
+    padding-bottom: 30px;
+}
+.foot {
+    margin-bottom: 10px;
+}
+.brand {
+    margin: 0;
+    color: #CCCCCC;
+    text-shadow: 2px 2px rgba(0,0,0, 0.3);
+    font-size: 45px;
+}
+.icons {
+    float: right;
+    padding: 25px 0;
+    .icon {
+        cursor: pointer;
+        float: left;
+        margin-left: 10px;
+    }
+}
+.icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    &:hover {
+        background-position: 0 -24px;
+    }
+}
+.icon-twitter {
+    background: url('img/twitter.png');
+}
+.icon-facebook {
+    background: url('img/facebook.png');
+}
+.icon-youtube {
+    background: url('img/youtube.png');
 }
