@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0,
+    maximum-scale=1.0, user-scalable=no' />
+    <title>Sheet</title>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet/less"  href="style.less" >
+
+    <link href='//api.tiles.mapbox.com/mapbox.js/v1.5.2/mapbox.css'
+    rel='stylesheet' />
+    <script src='//api.tiles.mapbox.com/mapbox.js/v1.5.2/mapbox.js'></script>
+
+    <script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/less.js/dist/less-1.5.1.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<body>
+    <div class="container">
+        <div class="head">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="brand">
+                        Щит <img src="img/logo.png" alt="" />
+                    </h1>
+                </div>
+                <div class="col-md-4">
+                    <div class="icons">
+                        <i class="icon icon-twitter"></i>
+                        <i class="icon icon-facebook"></i>
+                        <i class="icon icon-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-main">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Головна</a></li>
+                <li><a href="/services.html">Послуги</a></li>
+                <li><a href="/about.html">Про нас</a></li>
+                <li class="active"><a href="/contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+        <div class="well well-light">
+            <div class="row">
+                <div class="col-md-4 offers">
+                    <h4 class="page-title">Контактна інформація</h4>
+                    <h5>Вул. Велика Васильківська 45, Київ</h5>
+                    <dl class="dl-horizontal">
+                        <dt>Телефон:</dt>
+                        <dd>+38 044 123 23 23</dd>
+                        <dt>FAX:</dt>
+                        <dd> 044 123 23 33</dd>
+                        <dt>Email:</dt>
+                        <dd class="c-orange">contact@gmail.com</dd>
+                    </dl>
+                    <h4>
+                        Час роботи
+                    </h4>
+                        <p class="c-gray">
+                            Понеділок - П'ятниця: 
+                            <span class="c-orange"> 9:00 - 18:00</span>
+                        </p>
+                </div>
+                <div class="col-md-8 team">
+                    <div id='map'></div>
+                    <script>
+                        var map = L.mapbox.map('map', 'examples.map-9ijuk24y')
+                            .setView([50.45, 30.5], 13)
+                            .markerLayer.setGeoJSON([
+                                {
+                                    "type": "Feature",
+                                    "geometry": {
+                                        "type": "Point",
+                                        "coordinates": [30.495, 50.45]
+                                    },
+                                    "properties": {
+                                        "title": "MapBox SF",
+                                        "description": "155 9th St, San Francisco",
+                                        "marker-color": "#fc4353",
+                                        "marker-size": "large",
+                                        "marker-symbol": "star"
+                                    }
+                                }
+                            ]);
+
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="well well-dark foot">
+            Усі права захищенно © 2014
+        </div>
+    </div>
+</body>
+</html>
+
